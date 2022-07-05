@@ -1,0 +1,31 @@
+@import "variables";
+@import '~bootstrap/scss/bootstrap';
+@import "bootstrap-rtl";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./files/fontiran.css";
+@import "./files/adminlte.min.css";
+@import "./files/custom-style.css";
+
+
+.nav-pills {
+    .nav-item {
+        &:first-child {
+            margin-right: 0.2rem;
+
+        }
+    }
+}
+
+.ltr{
+    direction: ltr;
+}
+
+#navbar-collapse{
+    overflow-x: scroll;
+    white-space: nowrap;
+    ul li:not(:first-child){
+        margin-right: 1.5rem;
+    }
+    -webkit-overflow-scrolling: touch;
+}
+

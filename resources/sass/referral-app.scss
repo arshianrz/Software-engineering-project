@@ -1,0 +1,230 @@
+@import "variables";
+@import '~bootstrap/scss/bootstrap';
+@import "bootstrap-rtl";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./files/fontiran.css";
+@import "~toastr/toastr.scss";
+@import '~aos/dist/aos.css';
+
+body {
+    font-family: IRANSans !important;
+    font-weight: 400;
+    background: #f9f9f8;
+    overflow-x: hidden;
+}
+
+
+.ref-landing {
+    // height: 100vh;
+    // overflow: hidden;
+    background-color: #fafcff;
+    font-weight: 500;
+
+    .ref-landing_main {
+        border-radius: 8px;
+        box-shadow: 0 0 30px -8px #e2eaff;
+        background-color: #ffffff;
+
+        .ref-landing-main_code {
+            border-radius: 8px;
+            border: solid 1px #e2eaff;
+            padding: .5rem 0;
+        }
+
+        .ref-landing-main-box {
+            background-image: linear-gradient(to left, #3373ed, #2362db);
+            color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 30px -8px #e2eaff;
+            position: relative;
+            margin-right: 0;
+            margin-left: 0;
+
+            .line {
+                height: 100%;
+                border: solid 1px #ffffff;
+                position: absolute;
+                top: 0;
+                right: 50%;
+            }
+        }
+
+        textarea {
+            border-radius: 8px !important;
+            border: solid 1px #e2eaff !important;
+            background-color: #ffffff !important;
+            font-size: .8rem !important;
+
+            &:focus {
+                border-color: #ccc !important;
+                outline: 0 !important;
+                box-shadow: none !important;
+            }
+
+            &::placeholder {
+                color: #c0c0c0 !important;
+                font-size: .8rem !important;
+            }
+        }
+    }
+
+
+    .ref-share {
+        border-radius: 8px;
+        box-shadow: 0 0 30px -8px #e2eaff;
+        background-color: #ffffff;
+        max-width: 49%;
+        flex: 0 0 49%;
+
+        span {
+            font-size: .8rem
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .ref_landing_right {
+        width: 230px;
+    }
+
+    .ref_landing_left {
+        width: 270px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .ref-landing_main {
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+#referral-intro {
+    background-color: #ffffff;
+
+    .title {
+        font-size: 1.1rem;
+        font-weight: 600;
+
+        .line {
+            width: 50px;
+            height: 2px;
+            border-radius: 1px;
+            border: solid 1px #2362db;
+            background-color: #d8d8d8;
+        }
+    }
+
+    .section {
+        min-height: 100vh;
+
+        .section-body {
+            min-height: inherit;
+            position: relative;
+        }
+    }
+
+    #page1 {
+        background-image: url('./img/adult-blur.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #page3 {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+        }
+
+        li:not(:first-child) {
+            margin-top: 2.2rem;
+        }
+
+        .rectangle {
+            padding: 1.3rem 0;
+            border-radius: 14px;
+            box-shadow: 0 0 30px -2px #e2eaff;
+            background-color: #ffffff;
+            width: 80%;;
+
+            .text {
+                white-space: nowrap;
+                font-size: .8rem;
+                color: #285180;
+            }
+        }
+
+        .circle {
+            width: 8px;
+            height: 8px;
+            background-color: #2362db;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .besides-circle {
+            position: absolute;
+            top: 0;
+            right: 1em;
+        }
+    }
+
+    #page4 {
+        .rectangle {
+            width: 290px;
+            height: 95px;
+            border-radius: 8px;
+            box-shadow: 0 0 30px -2px #e2eaff;
+            background-color: #ffffff;
+            font-size: .9rem;
+        }
+
+        #arrow-img {
+            position: absolute;
+            top: 160px;
+            height: 530px;
+        }
+    }
+
+ 
+
+    #sing-up {
+        background-image: url('./img/adult-blur.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ml-md-n9 {
+        margin-left: -9rem !important;
+    }
+}
+
+@media (min-width: 576px) {
+    #page3{
+        .rectangle{
+            width: 50%!important;
+            .text{
+                white-space: pre-line!important;
+            }
+        }
+    }
+}
+
+.table-responsive .table {
+    max-width: none;
+}
